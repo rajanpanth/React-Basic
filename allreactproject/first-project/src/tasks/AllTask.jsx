@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
+import TodoList from "./day-7task";
 
 function Tasks() {
     return (
@@ -16,6 +17,7 @@ function Tasks() {
                     <Route path="/task8" element={<PasswordToggle />} />
                     <Route path="/task9" element={<TrafficLight />} />
                     <Route path="/task10" element={<RandomQuoteGenerator />} />
+                     <Route path="/todo" element={<TodoList/>} />
                     <Route path="*" element={<Nopage />} />
                 </Route>
             </Routes>
@@ -44,6 +46,7 @@ function Layout() {
             <Link to="/Task8"><button style={{ margin: 15, color: "black", fontWeight: "bold", padding: 10, height: 40, width: 100 }}>Task8</button></Link>
             <Link to="/Task9"><button style={{ margin: 15, color: "black", fontWeight: "bold", padding: 10, height: 40, width: 100 }}>Task9</button></Link>
             <Link to="/Task10"><button style={{ margin: 15, color: "black", fontWeight: "bold", padding: 10, height: 40, width: 100 }}>Task10</button></Link>
+             <Link to="/Todo"><button style={{ margin: 15, color: "black", fontWeight: "bold", padding: 10, height: 40, width: 100 }}>Todo</button></Link>
             <Outlet />
         </div>
     </div >)
