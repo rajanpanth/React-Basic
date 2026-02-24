@@ -11,6 +11,8 @@ import Authenticate from './auth/Dashboard.jsx'
 import Login from './auth/login.jsx'
 import AuthPage from './auth/AuthPage.jsx'
 import Tasks from './tasks/AllTask.jsx'
+import FoodMenu from './pages/FoodMenu.jsx'
+import DynamicFoodMenu from './pages/DynamicFoodMenu.jsx'
 
 
 
@@ -27,6 +29,7 @@ createRoot(document.getElementById('root')).render(
         <br></br>
     <b>After Login....</b>
     <AuthPage isAuthenticated={true}/> */}
-   <Tasks/>
+   {/* <Tasks/> */}
+<DynamicFoodMenu/>
   </StrictMode>,
 )
